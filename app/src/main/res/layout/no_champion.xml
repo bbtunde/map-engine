@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:textColor="#40000000"
+        android:id="@+id/close"
+        android:clickable="true"
+        android:background="@null"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="22sp"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#40000000"
+        android:padding="5sp"
+        android:layout_below="@+id/close"
+        >
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:padding="5sp"
+            android:background="@drawable/edittext_grey"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:ems="10"
+            android:gravity="left|top"
+            android:text="Oops! There are currently no Champion around your location at this time. You can however request a delivery and we'll send one to you."
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/caption"
+            android:paddingTop="5sp"
+            android:paddingBottom="5sp"
+            >
+
+            <Button
+                android:id="@+id/dialogButtonOK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Change Location"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/mxbtn"
+                android:textColor="@color/white"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ng.max.mapengine.MainActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+     <fragment
+            android:id="@+id/map"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            class="com.google.android.gms.maps.SupportMapFragment"
+         />
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         >
+
+         <TextView
+             android:id="@+id/marker"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:background="@drawable/balloon_bg"
+             android:text="SET PICKUP"
+             android:textSize="18dp"
+             android:paddingRight="10dp"
+             android:paddingLeft="10dp"
+             android:paddingTop="5dp"
+             android:paddingBottom="5dp"
+              />
+
+     </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/edittext_group"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Destination"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:layout_marginTop="26dp"
+            android:background="#d3d3d3"
+            android:id="@+id/delivery_address"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pick up address"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:background="@drawable/edittext_bg"
+            android:id="@+id/pickup_address"
+            />
+
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
